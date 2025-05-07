@@ -1,0 +1,25 @@
+{
+  "name": "freshessence",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Marina",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "gulp": "gulp",
+    "sass": "sass src/scss:dist/css"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "glob": "^10.3.12",
+    "gulp": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "sass": "^1.87.0",
+    "sharp": "^0.33.3"
+  },
+  "dependencies": {
+    "app-salon-php-mvc-sass": "file:",
+    "freshessence": "file:"
+  }
+}
