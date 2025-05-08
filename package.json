@@ -1,13 +1,13 @@
 {
   "name": "freshessence",
   "version": "1.0.0",
-  "description": "",
+  "description": "Proyecto",
   "author": "Marina ML",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "gulp": "gulp",
-    "sass": "sass src/scss:dist/css"
+    "sass": "sass --watch src/scss:dist/css"
   },
   "license": "ISC",
   "devDependencies": {

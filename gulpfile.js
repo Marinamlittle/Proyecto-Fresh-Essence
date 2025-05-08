@@ -1,3 +1,4 @@
+/*Herramientas necesarias para procesar archivos*/
 import path from 'path'
 import fs from 'fs'
 import { glob } from 'glob'
@@ -8,12 +9,12 @@ import terser from 'gulp-terser'
 import sharp from 'sharp'
 
 const sass = gulpSass(dartSass)
-
+/* Ruta*/ 
 const paths = {
     scss: 'src/scss/**/*.scss',
     js: 'src/js/**/*.js'
 }
-
+/*Tarea css: comprime scss a css*/
 export function css( done ) {
     src(paths.scss, {sourcemaps: true})
         .pipe( sass({
@@ -22,14 +23,14 @@ export function css( done ) {
         .pipe( dest('./public/build/css', {sourcemaps: '.'}) );
     done()
 }
-
+/*Tarea js*/
 export function js( done ) {
     src(paths.js)
       .pipe(terser())
       .pipe(dest('./public/build/js'))
     done()
 }
-
+/*Tarea Imagenes*/
 export async function imagenes(done) {
     const srcDir = './src/img';
     const buildDir = './public/build/img';
@@ -51,11 +52,11 @@ function procesarImagenes(file, outputSubDir) {
     const extName = path.extname(file)
 
     if (extName.toLowerCase() === '.svg') {
-        // If it's an SVG file, move it to the output directory
+        // Si es un archivo SVG, se mueve al directorio de salida
         const outputFile = path.join(outputSubDir, `${baseName}${extName}`);
     fs.copyFileSync(file, outputFile);
     } else {
-        // For other image formats, process them with sharp
+        // Para otros formatos de imagen
         const outputFile = path.join(outputSubDir, `${baseName}${extName}`);
         const outputFileWebp = path.join(outputSubDir, `${baseName}.webp`);
         const outputFileAvif = path.join(outputSubDir, `${baseName}.avif`);
@@ -66,7 +67,7 @@ function procesarImagenes(file, outputSubDir) {
         sharp(file).avif().toFile(outputFileAvif);
     }
 }
-
+/*Modo desarrollo: modo watch para siempre estar actualizado*/
 export function dev() {
     watch( paths.scss, css );
     watch( paths.js, js );
