@@ -9,7 +9,7 @@ body {
     min-height: 100%;
     display: flex;
     flex-direction: column;
-    background-color: v.$negro;
+    background-color: v.$verde;
     color: v.$blanco;
 }
 *, *:before, *:after {
@@ -30,8 +30,4 @@ a {
 
 img {
     max-width: 100%;
-}
-
-h1{
-    color: green;
 }

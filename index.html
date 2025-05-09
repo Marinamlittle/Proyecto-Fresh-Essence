@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fress Essence</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="dist/css/landing.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,38 +12,23 @@
 </head>
 <body>
     <header class="header">
-        <a href="index.html" class="logo" >
-            <img src="/src/img/logo1.png" alt="Logo Fresh Essence" />
-        </a>
-        
-        <nav>
-            <ul > 
+        <img class="logo" src="/src/img/logo1.png" alt="Logo Fresh Essence" />
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button id="cerrar" class="cerrar-menu"><i class="bi bi-x"></i></button>
+            <ul class="nav-list" > 
                 <li><a href="#">Inicio</a></li>
-                <li><a href="#">Nosotros</a></li>
                 <li><a href="#">Servicios</a></li>
+                <li><a href="#">Nosotros</a></li>
                 <li><a href="#">Contacto</a></li>
+                
             </ul>
+            <div>
+                <a href="#" class="boton-principal">Coger Cita</a>
+                </div>
         </nav>
-
-        <div class="botones-container">
-            <a href="#" class="boton">Inicia Sesión</a>
-            <a href="#" class="boton">Regístrate</a>
-        </div>
     </header>
     
-        <div class="fondo">
-                <div class="cuadro">
-                <div class="contenido-cuadro">
-                    <div class="texto">
-                    <h1>CLÍNICA ESTÉTICA EN ALGECIRAS</h1>
-                    <p>En <strong>Fresh Essence</strong>, fusionamos ciencia, bienestar y belleza para ofrecerte una experiencia única en cuidado personal. Nuestro equipo de especialistas está comprometido con tu bienestar, utilizando tecnología de vanguardia y tratamientos personalizados para que te sientas y te veas mejor que nunca.</p>
-                    </div>
-                    <div class="botones-dos-columnas">
-                        <a href="#" class="boton">Ver Tratamientos</a>
-                        <a href="#" class="boton">Pedir Cita</a>
-                    </div>
-        </div>
-        <button class="boton">Hola</button>
-    <script src="js/scripts.js"></script>
+    <script src="src/js/scripts.js"></script>
 </body>
 </html>

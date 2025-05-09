@@ -1,0 +1,117 @@
+@use 'variables' as v;
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: v.$blanco;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 40px; 
+  padding: 2rem;
+}
+.logo{
+    max-width: 22rem;
+}
+.nav-list{
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    font-size: 20px;
+}
+.nav-list li a {
+    text-decoration: none;
+    color: v.$gris;
+}
+.abrir-menu, .cerrar-menu {
+    display: none;
+}
+//Moviles: de 480 para abajo.
+@media screen and (max-width: 480px){
+.abrir-menu , .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 2.5rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+.abrir-menu{
+    color: v.$beige;
+ }
+.cerrar-menu{
+    color: v.$marino;
+    margin-left: auto;
+ }
+
+.logo{
+    max-width: 10rem;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 2rem;
+    position: absolute;
+    top : 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    background-color: v.$beige;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+}
+.nav.visible{
+    opacity: 1;
+    visibility: visible;
+}
+.nav-list{
+    flex-direction: column;
+    align-items: end;
+    font-size: 16px;
+}
+.nav-list li a {
+    text-decoration: none;
+    color: v.$blanco;
+}
+}
+
+//Tablets
+@media screen and (max-width: 768px){
+.logo{
+    max-width: 12rem;
+} 
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.nav-list{
+    list-style-type: none;
+    display: flex;
+    gap: rem;
+    font-size: 16px;
+}
+.nav-list li a {
+    text-decoration: none;
+    color: v.$gris;
+    font-size: 16px;
+}
+
+}
+
+.boton-principal{
+    background-color: v.$marino;
+    color: v.$blanco;
+    padding: 8px 18px;
+    border-radius: 8px;         
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
