@@ -6,16 +6,22 @@ header{
     justify-content: space-between;
     padding: 2rem;
     background-color: v.$blanco;
+
 }
 .nav {
+  background-color: v.$blanco;
   display: flex;
   align-items: center;
-  gap: 40px; 
+  gap: 1rem; 
   padding: 2rem;
 }
-.logo{
-    max-width: 22rem;
+.header.active{
+  background-color: v.$beige;
 }
+.logo{
+    max-width: 20rem;
+}
+
 .nav-list{
     list-style-type: none;
     display: flex;
@@ -25,12 +31,30 @@ header{
 .nav-list li a {
     text-decoration: none;
     color: v.$gris;
+
+}
+.nav-list li a:hover{
+    color: v.$beige;
 }
 .abrir-menu, .cerrar-menu {
     display: none;
 }
-//Moviles: de 480 para abajo.
-@media screen and (max-width: 480px){
+.boton-principal{
+    background-color: v.$marino;
+    color: v.$blanco;
+    padding: 8px 18px;
+    border-radius: 8px;         
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+.boton-principal:hover {
+    background-color: v.$beige;
+}
+
+//
+@media screen and (max-width: 930px){
 .abrir-menu , .cerrar-menu {
         display: block;
         border: 0;
@@ -47,7 +71,8 @@ header{
  }
 
 .logo{
-    max-width: 10rem;
+    max-width: 16rem;
+    margin-left: -1rem;
 }
 .nav{
     display: flex;
@@ -63,8 +88,7 @@ header{
     background-color: v.$beige;
     padding: 2rem;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    visibility: hidden;
+    height: auto;         
 }
 .nav.visible{
     opacity: 1;
@@ -80,38 +104,3 @@ header{
     color: v.$blanco;
 }
 }
-
-//Tablets
-@media screen and (max-width: 768px){
-.logo{
-    max-width: 12rem;
-} 
-.nav {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-.nav-list{
-    list-style-type: none;
-    display: flex;
-    gap: rem;
-    font-size: 16px;
-}
-.nav-list li a {
-    text-decoration: none;
-    color: v.$gris;
-    font-size: 16px;
-}
-
-}
-
-.boton-principal{
-    background-color: v.$marino;
-    color: v.$blanco;
-    padding: 8px 18px;
-    border-radius: 8px;         
-    border: none;
-    cursor: pointer;
-    text-decoration: none;
-}
-
