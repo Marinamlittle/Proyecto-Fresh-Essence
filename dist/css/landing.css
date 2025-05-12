@@ -58,13 +58,14 @@ header {
   cursor: pointer;
   text-decoration: none;
   transition: all 0.3s ease 0s;
+  white-space: nowrap;
 }
 
 .boton-principal:hover {
   background-color: #beb7a4;
 }
 
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 640px) {
   .abrir-menu, .cerrar-menu {
     display: block;
     border: 0;
@@ -111,6 +112,38 @@ header {
   .nav-list li a {
     text-decoration: none;
     color: #ffffff;
+  }
+}
+@media (min-width: 640px) and (max-width: 768px) {
+  .logo {
+    max-width: 16rem;
+    margin-left: -1rem;
+  }
+  .nav {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    font-size: 18px;
+  }
+  .boton-principal {
+    background-color: #1a2b3c;
+    color: #ffffff;
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+  }
+  .boton-principal:hover {
+    background-color: #beb7a4;
   }
 }
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
