@@ -4,23 +4,28 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem;
-    background-color: v.$blanco;
-
+    padding: 1rem;
+    background-color: transparent;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
 }
 .nav {
-  background-color: v.$blanco;
+  background-color: transparent;
   display: flex;
   align-items: center;
   gap: 1rem; 
   padding: 2rem;
+  transition: opacity 1s ease, visibility 1s ease;
+
 }
 .header.active{
   background-color: v.$beige;
 }
 .logo{
-    max-width: 20rem;
-}
+    max-width: 18rem;
+} 
 
 .nav-list{
     list-style-type: none;
@@ -34,7 +39,7 @@ header{
 
 }
 .nav-list li a:hover{
-    color: v.$beige;
+    color: v.$blanco;
 }
 .abrir-menu, .cerrar-menu {
     display: none;
@@ -57,14 +62,14 @@ header{
 //MOVIL
 @media screen and (max-width: 640px){
 .abrir-menu , .cerrar-menu {
-        display: block;
-        border: 0;
-        font-size: 2.5rem;
-        background-color: transparent;
-        cursor: pointer;
+    display: block;
+    border: 0;
+    font-size: 2.5rem;
+    background-color: transparent;
+    cursor: pointer;
     }
 .abrir-menu{
-    color: v.$beige;
+    color: v.$marino;
  }
 .cerrar-menu{
     color: v.$marino;
@@ -80,7 +85,7 @@ header{
     flex-direction: column;
     align-items: end;
     gap: 2rem;
-    position: absolute;
+    position: fixed;
     top : 0;
     right: 0;
     bottom: 0;
@@ -89,7 +94,9 @@ header{
     background-color: v.$beige;
     padding: 2rem;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.1);
-    height: auto;         
+    height: auto;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+
 }
 .nav.visible{
     opacity: 1;

@@ -9,16 +9,21 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem;
-  background-color: #ffffff;
+  padding: 1rem;
+  background-color: transparent;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: fixed;
 }
 
 .nav {
-  background-color: #ffffff;
+  background-color: transparent;
   display: flex;
   align-items: center;
   gap: 1rem;
   padding: 2rem;
+  transition: opacity 1s ease, visibility 1s ease;
 }
 
 .header.active {
@@ -26,7 +31,7 @@ header {
 }
 
 .logo {
-  max-width: 20rem;
+  max-width: 18rem;
 }
 
 .nav-list {
@@ -42,7 +47,7 @@ header {
 }
 
 .nav-list li a:hover {
-  color: #beb7a4;
+  color: #ffffff;
 }
 
 .abrir-menu, .cerrar-menu {
@@ -74,7 +79,7 @@ header {
     cursor: pointer;
   }
   .abrir-menu {
-    color: #beb7a4;
+    color: #1a2b3c;
   }
   .cerrar-menu {
     color: #1a2b3c;
@@ -89,7 +94,7 @@ header {
     flex-direction: column;
     align-items: end;
     gap: 2rem;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
@@ -99,6 +104,7 @@ header {
     padding: 2rem;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.1);
     height: auto;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
   }
   .nav.visible {
     opacity: 1;
@@ -453,6 +459,10 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+main {
+  margin-top: 150px;
 }
 
 /*# sourceMappingURL=landing.css.map */
