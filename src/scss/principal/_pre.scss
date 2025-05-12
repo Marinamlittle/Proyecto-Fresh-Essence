@@ -1,0 +1,60 @@
+@use 'variables' as v;
+
+.pre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px; 
+    padding: 20px;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  
+  
+.separador {
+    width: 60%;     
+    margin: 20px auto;
+    border: none;
+    height: 2px;
+    background-color: v.$beige;
+}
+
+.pre p,
+.pre h2,
+.pre h3 {
+  color: v.$gris;
+}
+.pre p {
+    max-width: 70rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+@media (max-width: 768px) {
+.pre {
+    gap: 24px; // más separación entre elementos
+    padding: 30px 16px; // más espacio interior (vertical y horizontal)
+    }
+.pre h2 {
+    font-size: 1.3rem;
+}
+
+.pre h3 {
+    font-size: 1rem;
+}
+
+.pre p {
+    font-size: 1rem;
+    padding: 0 10px;
+}
+.separador {
+    width: 60%;
+    margin: 2px auto;
+    border: none;
+    height: 2px;
+    background-color: v.$beige;
+  }
+  
+}
