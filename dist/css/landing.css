@@ -15,6 +15,16 @@ header {
   left: 0;
   top: 0;
   position: fixed;
+  padding: 1rem 2rem;
+  transition: padding 0.3s ease, background-color 0.3s ease;
+}
+
+.header.shrink {
+  padding: 0.4rem 2rem;
+}
+
+.header.shrink .logo {
+  max-width: 16rem;
 }
 
 .nav {
@@ -32,6 +42,7 @@ header {
 
 .logo {
   max-width: 18rem;
+  transition: max-width 0.3s ease;
 }
 
 .nav-list {
@@ -138,6 +149,13 @@ header {
     gap: 1rem;
     font-size: 18px;
   }
+  .nav-list li a {
+    text-decoration: none;
+    color: #333333;
+  }
+  .nav-list li a:hover {
+    color: #ffffff;
+  }
   .boton-principal {
     background-color: #1a2b3c;
     color: #ffffff;
@@ -149,7 +167,7 @@ header {
     transition: all 0.3s ease 0s;
   }
   .boton-principal:hover {
-    background-color: #beb7a4;
+    background-color: #1a2b3c;
   }
 }
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */

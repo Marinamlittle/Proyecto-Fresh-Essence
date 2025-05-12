@@ -12,12 +12,21 @@ document.addEventListener("DOMContentLoaded", () => {
       nav.classList.remove("visible");
     });
   
+
 // Scroll de la barra de navegación
-    const header = document.getElementById("Header");
-    window.addEventListener("scroll", () => {
-      const scroll = window.scrollY;
-      header.style.backgroundColor = scroll > 10 ? "#beb7a4" : "transparent";
-    });
+  const header = document.getElementById("Header");
+  window.addEventListener("scroll", () => {
+    const scroll = window.scrollY;
+    
+    header.style.backgroundColor = scroll > 10 ? "#beb7a4" : "transparent";
+
+    if (scroll > 50) {
+      header.classList.add("shrink");
+    } else {
+      header.classList.remove("shrink");
+    }
+});
+
   
 // Scroll suave a secciones
     const btnServicios = document.getElementById("btn-servicios");
