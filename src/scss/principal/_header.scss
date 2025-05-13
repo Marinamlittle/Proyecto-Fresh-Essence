@@ -4,7 +4,6 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem; 
     background-color: transparent;
     width: 100%;
     left: 0;
@@ -13,14 +12,12 @@ header{
     padding: 1rem 2rem;
     transition: padding 0.3s ease, background-color 0.3s ease;
 }
-
 .header.shrink {
     padding: 0.4rem 2rem;
 }
 .header.shrink .logo {
-    max-width: 16rem;
+    max-width: 15rem;
 }
- 
 .nav {
   background-color: transparent;
   display: flex;
@@ -32,12 +29,10 @@ header{
 .header.active{
   background-color: v.$beige;
 }
-
 .logo{
     max-width: 18rem;
     transition: max-width 0.3s ease;
 } 
-
 .nav-list{
     list-style-type: none;
     display: flex;
@@ -49,7 +44,7 @@ header{
     color: v.$gris;
 }
 .nav-list li a:hover{
-    color: v.$beige;
+    color: v.$blanco;
 }
 .abrir-menu, .cerrar-menu {
     display: none;
@@ -85,6 +80,9 @@ header{
     color: v.$marino;
     margin-left: auto;
  }
+ .header.shrink .logo {
+    max-width: 10rem;
+}
 
 .logo{
     max-width: 16rem;
@@ -161,5 +159,8 @@ header{
 }
 .boton-principal:hover {
     background-color: v.$marino;
+}
+.header.shrink .logo {
+    max-width: 14rem;
 }
 }

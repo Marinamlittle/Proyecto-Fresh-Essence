@@ -9,7 +9,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
   background-color: transparent;
   width: 100%;
   left: 0;
@@ -24,7 +23,7 @@ header {
 }
 
 .header.shrink .logo {
-  max-width: 16rem;
+  max-width: 15rem;
 }
 
 .nav {
@@ -58,7 +57,7 @@ header {
 }
 
 .nav-list li a:hover {
-  color: #beb7a4;
+  color: #ffffff;
 }
 
 .abrir-menu, .cerrar-menu {
@@ -95,6 +94,9 @@ header {
   .cerrar-menu {
     color: #1a2b3c;
     margin-left: auto;
+  }
+  .header.shrink .logo {
+    max-width: 10rem;
   }
   .logo {
     max-width: 16rem;
@@ -168,6 +170,9 @@ header {
   }
   .boton-principal:hover {
     background-color: #1a2b3c;
+  }
+  .header.shrink .logo {
+    max-width: 14rem;
   }
 }
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -816,7 +821,7 @@ a[href^="#"] {
     max-width: 90%;
   }
 }
-.servicios {
+.servicios-sec {
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -846,6 +851,7 @@ a[href^="#"] {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 40px;
 }
 
 .titulo-nosotros h2 {
@@ -857,11 +863,12 @@ a[href^="#"] {
   font-size: 25px;
 }
 
-.contenido-servicios {
+.contenido-peluqueria, .contenido-manicura, .contenido-tratamiento {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   flex-wrap: wrap;
 }
 
@@ -872,7 +879,7 @@ a[href^="#"] {
   padding: 40px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   justify-content: center;
   align-items: flex-start;
   text-align: left;
@@ -880,15 +887,15 @@ a[href^="#"] {
 }
 .columna-info h3 {
   color: #1a2b3c;
-  font-size: 35px;
+  font-size: 30px;
 }
 .columna-info p, .columna-info li {
   color: #333333;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.5rem;
 }
 
-.servicios-peluqueria li {
+.servicios-peluqueria, .servicios-tratamiento, .servicios-manicura .servicios li {
   margin-bottom: 10px;
 }
 
@@ -905,10 +912,11 @@ a[href^="#"] {
   max-width: 100%;
   height: auto;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.servicios-peluqueria li::before {
+.servicios-peluqueria li::before,
+.servicios-manicura li::before,
+.servicios-tratamiento li::before {
   content: "\f061";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -916,10 +924,135 @@ a[href^="#"] {
   margin-right: 8px;
 }
 
-.servicios-peluqueria {
+.servicios-peluqueria, .servicios-manicura, .servicios-tratamiento {
   list-style: none;
   padding: 0;
   margin-top: 15px;
+}
+
+@media screen and (max-width: 480px) {
+  .contenido-peluqueria,
+  .contenido-manicura,
+  .contenido-tratamiento {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    padding: 0 15px;
+    margin: 0;
+  }
+  .titulo-servicios h2 {
+    text-align: center;
+    color: #000000;
+    margin: 0;
+    font-weight: 450;
+    letter-spacing: 2px;
+    font-size: 20px;
+  }
+  .titulo-nosotros h2 {
+    text-align: center;
+    margin: 0;
+    color: #000000;
+    font-weight: 450;
+    letter-spacing: 2px;
+    font-size: 20px;
+  }
+  .columna-info {
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .columna-info h3 {
+    color: #1a2b3c;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .columna-info p, .columna-info li {
+    color: #333333;
+    font-size: 18px;
+    line-height: 1.5rem;
+    text-align: left;
+  }
+  .columna-foto {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100px;
+    padding: 10px;
+  }
+  .columna-foto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+  .servicios-peluqueria li::before,
+  .servicios-manicura li::before,
+  .servicios-tratamiento li::before {
+    content: "\f061";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #1a2b3c;
+    margin-right: 8px;
+  }
+  .servicios-peluqueria, .servicios-manicura, .servicios-tratamiento {
+    list-style: none;
+    padding: 0;
+    margin-top: 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contenido-peluqueria, .contenido-manicura, .contenido-tratamiento {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .columna-info {
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .columna-info h3 {
+    color: #1a2b3c;
+    font-size: 18px;
+  }
+  .columna-info p, .columna-info li {
+    color: #333333;
+    font-size: 14px;
+    line-height: 1.5rem;
+  }
+  .columna-foto {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 280px;
+    padding: 20px 0;
+  }
+  .columna-foto img {
+    max-width: 120%;
+    height: 200px;
+    border-radius: 12px;
+  }
 }
 
 /*# sourceMappingURL=landing.css.map */
