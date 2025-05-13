@@ -816,5 +816,110 @@ a[href^="#"] {
     max-width: 90%;
   }
 }
+.servicios {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.titulo-servicios {
+  background-color: #beb7a4;
+  height: 100px;
+  border: 1px #333333 solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-servicios h2 {
+  text-align: center;
+  color: #000000;
+  margin: 0;
+  font-weight: 450;
+  letter-spacing: 2px;
+  font-size: 25px;
+}
+
+.titulo-nosotros {
+  background-color: #beb7a4;
+  height: 100px;
+  border: 1px #333333 solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-nosotros h2 {
+  text-align: center;
+  margin: 0;
+  color: #000000;
+  font-weight: 450;
+  letter-spacing: 2px;
+  font-size: 25px;
+}
+
+.contenido-servicios {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.columna-info {
+  flex: 1;
+  min-width: 280px;
+  text-align: left;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  margin-left: 15px;
+}
+.columna-info h3 {
+  color: #1a2b3c;
+  font-size: 35px;
+}
+.columna-info p, .columna-info li {
+  color: #333333;
+  font-size: 20px;
+  line-height: 1.5rem;
+}
+
+.servicios-peluqueria li {
+  margin-bottom: 10px;
+}
+
+.columna-foto {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 280px;
+  padding: 60px;
+}
+
+.columna-foto img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.servicios-peluqueria li::before {
+  content: "\f061";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #1a2b3c;
+  margin-right: 8px;
+}
+
+.servicios-peluqueria {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
 
 /*# sourceMappingURL=landing.css.map */

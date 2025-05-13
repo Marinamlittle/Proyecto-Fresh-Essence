@@ -1,0 +1,105 @@
+@use 'variables' as v;
+
+.servicios {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.titulo-servicios {
+    background-color: v.$beige;
+    height: 100px;
+    border: 1px v.$gris solid;
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+}
+
+.titulo-servicios h2 {
+    text-align: center;
+    color: v.$negro;
+    margin: 0; 
+    font-weight: 450;
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+.titulo-nosotros {
+    background-color: v.$beige;
+    height: 100px;
+    border: 1px v.$gris solid;
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+}
+
+.titulo-nosotros h2 {
+    text-align: center;
+    margin: 0; 
+    color: v.$negro;
+    font-weight: 450;
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+
+.contenido-servicios {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap; 
+}
+
+.columna-info {
+  flex: 1;
+  min-width: 280px;
+  text-align: left;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  margin-left: 15px;
+h3{
+    color: v.$marino;
+    font-size: 35px;
+}
+p{
+
+}
+p, li{
+    color: v.$gris;
+    font-size: 20px;
+    line-height: 1.5rem;
+}}
+
+.servicios-peluqueria li {
+  margin-bottom: 10px;
+}
+.columna-foto {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 280px;
+  padding: 60px;
+}
+
+.columna-foto img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.servicios-peluqueria li::before {
+  content: "\f061";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: v.$marino;
+  margin-right: 8px;
+}
+.servicios-peluqueria {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
