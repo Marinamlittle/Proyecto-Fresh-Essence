@@ -46,7 +46,7 @@
     justify-content: end; 
 }
 .caja .boton-encabezado button {
-    background-color: v.$beige;
+    background-color: v.$marino;
     color: v.$blanco;
     padding: 20px 20px;
     border: none;
@@ -62,7 +62,7 @@
   
 
 .caja button:hover {
-    background-color: v.$gris;
+    background-color: v.$beige;
 }
 
 @media (max-width: 768px) {

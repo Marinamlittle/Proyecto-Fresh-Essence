@@ -11,6 +11,7 @@ header{
     position: fixed;
     padding: 1rem 2rem;
     transition: padding 0.3s ease, background-color 0.3s ease;
+    z-index: 999;
 }
 .header.shrink {
     padding: 0.4rem 2rem;
@@ -42,10 +43,31 @@ header{
 .nav-list li a {
     text-decoration: none;
     color: v.$gris;
+    y: inline-block;
+    transition: transform 0.3s ease;
 }
 .nav-list li a:hover{
-    color: v.$blanco;
+    color: v.$beige;
 }
+.nav-list li a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+.nav-list li a:hover {
+    transform: scale(1.1);
+}
+.header.active {
+  background-color: v.$beige;
+}
+
+.header.active .nav-list li a {
+  color: v.$blanco;
+}
+
+.header.active .nav-list li a:hover {
+  color: v.$marino;
+}
+
 .abrir-menu, .cerrar-menu {
     display: none;
 }
@@ -138,7 +160,7 @@ header{
     list-style-type: none;
     display: flex;
     gap: 1rem;
-    font-size: 18px;
+    font-size: 16px;
 }
 .nav-list li a {
     text-decoration: none;

@@ -46,10 +46,15 @@
   flex-direction: row;
   justify-content: center; 
   align-items: center;
-  gap: 10px;
   flex-wrap: wrap;
 }
 
+
+.todo-servicios{
+  display: flex;
+  flex-direction: column; /* si los elementos están apilados verticalmente */
+  gap: -30px;
+}
 .columna-info {
   flex: 1;
   min-width: 280px;
@@ -72,9 +77,7 @@ p, li{
     line-height: 1.5rem;
 }}
 
-.servicios-peluqueria, .servicios-tratamiento, .servicios-manicura .servicios li {
-  margin-bottom: 10px;
-}
+
 
 .columna-foto {
   flex: 1;
@@ -82,7 +85,7 @@ p, li{
   justify-content: center;
   align-items: center;
   min-width: 280px;
-  padding: 60px;
+  padding: 30px;
 }
 
 .columna-foto img {
@@ -219,7 +222,7 @@ p, li{
   }
   p, li{
     color: v.$gris;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.5rem;
   }}
   .columna-foto {
