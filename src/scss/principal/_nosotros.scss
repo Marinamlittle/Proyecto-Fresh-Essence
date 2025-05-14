@@ -54,7 +54,7 @@
     line-height: 1.4;
     text-align: left;     
     padding-left: 5rem;
-    padding-right: 2rem;
+    padding-right: 3rem;
   }
 
   h3, h4 {
@@ -64,16 +64,14 @@
 
   p {
     font-size: 16px;
+    
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 960px) {
     width: 100%;
     height: auto;
     padding: 1rem;
-
-    .caja-individual-nosotros-texto {
-      margin-bottom: 10px;
-    }
+    flex-direction: column; 
 
     h3, h4, p {
       padding-left: 25px;
@@ -97,12 +95,12 @@
 
 .caja-mision {
   flex: 1;
-  width: 100px;
+  width: 100%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
 
   h3 {
     font-size: 30px;
@@ -125,6 +123,7 @@
     font-size: 16px;
     color: v.$negro;
     line-height: 1.6;
+    max-width: 90% !important;
   }
 
   @media (max-width: 768px) {
@@ -132,6 +131,7 @@
     height: auto;
     margin-top: 50px;
     padding: 1rem;
+    flex-direction: column;
 
     h3, h4, p {
       margin: 0 1rem;
@@ -139,19 +139,19 @@
 
     h3 {
       font-size: 24px;
-      padding-left: 25px;
+      padding-left: 12px;
     }
 
     h4 {
       font-size: 20px;
-      padding-left: 25px;
+      padding-left: 12px;
     }
 
     p {
       font-size: 16px;
-      max-width: 90%; // Asegúrate de que no esté limitado
+      max-width: 90%;
       width: 100%;
-      padding-left: 25px;
+      padding-left: 12px;
     }
   }
 }
@@ -187,3 +187,4 @@
     }
   }
 }
+

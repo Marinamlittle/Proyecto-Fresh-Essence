@@ -55,6 +55,7 @@ header{
 }
 .nav-list li a:hover {
     transform: scale(1.1);
+    color: v.$marino;
 }
 .header.active {
   background-color: v.$beige;
@@ -87,7 +88,7 @@ header{
 }
 
 //MOVIL
-@media screen and (max-width: 640px){
+@media screen and (max-width: 715px){
 .abrir-menu , .cerrar-menu {
     display: block;
     border: 0;
@@ -144,7 +145,7 @@ header{
 }
 
 //TABLET
-@media (min-width: 640px) and (max-width: 768px) {
+@media (min-width: 700px) and (max-width: 870px) {
 .logo{
     max-width: 16rem;
     margin-left: -1rem;

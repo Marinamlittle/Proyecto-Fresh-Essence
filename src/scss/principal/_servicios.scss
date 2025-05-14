@@ -52,7 +52,7 @@
 
 .todo-servicios{
   display: flex;
-  flex-direction: column; /* si los elementos están apilados verticalmente */
+  flex-direction: column;
   gap: -30px;
 }
 .columna-info {
@@ -73,7 +73,7 @@ h3{
 }
 p, li{
     color: v.$gris;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5rem;
 }}
 
@@ -239,6 +239,20 @@ p, li{
     height: 200px;
     border-radius: 12px;
   }
-  
-
+  .titulo-servicios h2 {
+    text-align: center;
+    color: v.$negro;
+    margin: 0; 
+    font-weight: 450;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.titulo-nosotros h2 {
+  text-align: center;
+  margin: 0; 
+  color: v.$negro;
+  font-weight: 450;
+  letter-spacing: 2px;
+  font-size: 2px;
+}
 }
