@@ -1,0 +1,145 @@
+@use 'variables' as v;
+
+.contacto-img {
+  position: relative;
+  width: 100%;
+  height: 800px;
+}
+.contacto-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.titulo-contacto {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: v.$marino;
+  font-size: 48px;
+  letter-spacing: 2px;
+  z-index: 2;
+}
+.caja-blanca {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 60px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  max-width: 900px;
+  width: 90%;
+  flex-wrap: wrap;
+}
+.columna {
+    flex: 1;
+    min-width: 200px;
+
+    i {
+      font-size: 36px;
+      margin-bottom: 10px;
+      color: v.$gris;
+    }
+
+    h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: v.$marino;
+    }
+
+    h4 {
+      font-size: 16px;
+      margin: 4px 0;
+      color: v.$negro;
+    }
+}
+.caja-blanca .columna i {
+  font-size: 50px;
+  color: v.$marino;
+  margin-bottom: 10px;
+}
+
+//MOVIL
+@media screen and (max-width: 768px) {
+    .titulo-contacto {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: v.$marino;
+        font-size: 28px;
+        letter-spacing: 2px;
+        z-index: 2;
+    .contacto-img {
+        position: relative;
+        width: 100%;
+        height: 500px;
+    }
+    .contacto-img img {
+        width: 100%;
+        height: 80%;
+        object-fit: cover;
+    }}
+    
+
+}
+
+
+
+
+
+//tablet
+@media (max-width: 768px) {
+.caja-blanca {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+.columna {
+    width: 100%;
+    max-width: 400px;
+    i {
+      font-size: 28px;
+      margin-bottom: 10px;
+      color: v.$gris;
+    }
+
+    h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: v.$marino;
+    }
+
+    h4 {
+      font-size: 20px;
+      margin: 4px 0;
+      color: v.$negro;
+    }
+
+  }
+.titulo-contacto {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: v.$marino;
+    font-size: 35px;
+    letter-spacing: 2px;
+    z-index: 2;
+}
+.contacto-img {
+        position: relative;
+        width: 100%;
+        height: 700px;
+    }
+    .contacto-img img {
+        width: 100%;
+        height: 90%;
+        object-fit: cover;
+    }}
