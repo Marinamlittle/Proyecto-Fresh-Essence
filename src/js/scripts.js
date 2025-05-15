@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // Scroll suave a secciones
     const btnServicios = document.getElementById("btn-servicios");
     const btnNosotros = document.getElementById("btn-nosotros");
+    const btnContacto = document.getElementById("btn-nosotros");
   
     if (btnServicios) {
       btnServicios.addEventListener("click", () => {
@@ -46,6 +47,14 @@ document.addEventListener("DOMContentLoaded", () => {
         const seccionNosotros = document.getElementById("nosotros");
         if (seccionNosotros) {
           seccionNosotros.scrollIntoView({ behavior: "smooth" });
+        }
+      });
+    }
+    if (btnContacto) {
+      btnContacto.addEventListener("click", () => {
+        const seccionContactos = document.getElementById("contacto");
+        if (seccionContactos) {
+          seccionContactos.scrollIntoView({ behavior: "smooth" });
         }
       });
     }
@@ -69,5 +78,10 @@ window.addEventListener('scroll', () => {
   } else {
     header.classList.remove('active');
   }
+});
+
+//Animacion Enviando
+document.getElementById("enviar").addEventListener("click", function () {
+  this.innerHTML = "Enviando...";
 });
 

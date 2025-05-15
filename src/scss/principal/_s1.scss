@@ -58,6 +58,9 @@
     text-transform: uppercase;
     white-space: nowrap;
     width: 100%;
+    display: flex;
+    align-items: center;     /* CENTRAR VERTICAL */
+    justify-content: center;
   }
   
 
