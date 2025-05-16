@@ -12,12 +12,13 @@ header{
     padding: 1rem 2rem;
     transition: padding 0.3s ease, background-color 0.3s ease;
     z-index: 999;
+
 }
 .header.shrink {
     padding: 0.4rem 2rem;
 }
 .header.shrink .logo {
-    max-width: 15rem;
+    max-width: 14rem;
 }
 .nav {
   background-color: transparent;
@@ -31,9 +32,13 @@ header{
   background-color: v.$beige;
 }
 .logo{
-    max-width: 18rem;
-    transition: max-width 0.3s ease;
+    max-height: 5rem;
+    height: auto;
+    width: auto;
+    display: block;
+    object-fit: contain;
 } 
+
 .nav-list{
     list-style-type: none;
     display: flex;
@@ -98,17 +103,18 @@ header{
     }
 .abrir-menu{
     color: v.$marino;
+    margin-left: 80px;
  }
 .cerrar-menu{
     color: v.$marino;
-    margin-left: auto;
+    margin-left: 70px;
  }
  .header.shrink .logo {
     max-width: 10rem;
 }
 
 .logo{
-    max-width: 16rem;
+    max-width: 14rem;
     margin-left: -1rem;
 }
 .nav{
@@ -148,7 +154,6 @@ header{
 @media (min-width: 700px) and (max-width: 870px) {
 .logo{
     max-width: 16rem;
-    margin-left: -1rem;
 }
 .nav {
     background-color: transparent;

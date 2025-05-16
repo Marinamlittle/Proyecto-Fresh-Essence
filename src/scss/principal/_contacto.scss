@@ -16,10 +16,14 @@
   left: 50%;
   transform: translateX(-50%);
   color: v.$marino;
-  font-size: 35px;
+  font-size: 45px;
+  font-weight: 400;
   letter-spacing: 2px;
   z-index: 2;
-}
+} 
+  form button:hover{
+  color: v.$marino;
+  }
 .caja-blanca {
   position: absolute;
   top: 100%;
@@ -56,6 +60,7 @@
       font-size: 16px;
       margin: 4px 0;
       color: v.$negro;
+      font-weight: 500;
     }
 }
 .caja-blanca .columna i {

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -29,7 +30,7 @@ header {
 }
 
 .header.shrink .logo {
-  max-width: 15rem;
+  max-width: 14rem;
 }
 
 .nav {
@@ -46,8 +47,11 @@ header {
 }
 
 .logo {
-  max-width: 18rem;
-  transition: max-width 0.3s ease;
+  max-height: 5rem;
+  height: auto;
+  width: auto;
+  display: block;
+  object-fit: contain;
 }
 
 .nav-list {
@@ -120,16 +124,17 @@ header {
   }
   .abrir-menu {
     color: #1a2b3c;
+    margin-left: 80px;
   }
   .cerrar-menu {
     color: #1a2b3c;
-    margin-left: auto;
+    margin-left: 70px;
   }
   .header.shrink .logo {
     max-width: 10rem;
   }
   .logo {
-    max-width: 16rem;
+    max-width: 14rem;
     margin-left: -1rem;
   }
   .nav {
@@ -166,7 +171,6 @@ header {
 @media (min-width: 700px) and (max-width: 870px) {
   .logo {
     max-width: 16rem;
-    margin-left: -1rem;
   }
   .nav {
     background-color: transparent;
@@ -1158,7 +1162,7 @@ a[href^="#"] {
 }
 .caja-individual-nosotros-texto h3, .caja-individual-nosotros-texto h4, .caja-individual-nosotros-texto p {
   max-width: 100%;
-  line-height: 1.4;
+  line-height: 1.5rem;
   text-align: left;
   padding-left: 5rem;
   padding-right: 3rem;
@@ -1169,6 +1173,7 @@ a[href^="#"] {
 }
 .caja-individual-nosotros-texto p {
   font-size: 16px;
+  line-height: 1.5rem;
 }
 @media (max-width: 960px) {
   .caja-individual-nosotros-texto {
@@ -1205,11 +1210,12 @@ a[href^="#"] {
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
+  padding-bottom: 20px;
 }
 .caja-mision h3 {
   font-size: 30px;
   color: #1a2b3c;
-  line-height: 1.6;
+  line-height: 1.5;
   padding-left: 5rem;
   padding-right: 2rem;
 }
@@ -1218,13 +1224,13 @@ a[href^="#"] {
   color: #1a2b3c;
   padding-left: 5rem;
   padding-right: 2rem;
-  line-height: 1.6;
+  line-height: 1.5;
 }
 .caja-mision p {
   font-size: 16px;
   color: #000000;
-  line-height: 1.6;
   max-width: 90% !important;
+  line-height: 1.5rem;
 }
 @media (max-width: 768px) {
   .caja-mision {
@@ -1301,9 +1307,14 @@ a[href^="#"] {
   left: 50%;
   transform: translateX(-50%);
   color: #1a2b3c;
-  font-size: 35px;
+  font-size: 45px;
+  font-weight: 400;
   letter-spacing: 2px;
   z-index: 2;
+}
+
+form button:hover {
+  color: #1a2b3c;
 }
 
 .caja-blanca {
@@ -1341,6 +1352,7 @@ a[href^="#"] {
   font-size: 16px;
   margin: 4px 0;
   color: #000000;
+  font-weight: 500;
 }
 
 .caja-blanca .columna i {
@@ -1541,6 +1553,101 @@ button p {
   }
   .contact_form button {
     height: 40px;
+  }
+}
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer {
+  background-color: #1a2b3c;
+  padding: 70px 0;
+  margin-top: 250px;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #beb7a4;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #ffffff;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: #beb7a4;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+  color: #1a2b3c;
+  background-color: #beb7a4;
+}
+
+/*responsive*/
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
   }
 }
 

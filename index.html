@@ -14,16 +14,17 @@
 </head>
 <body >
     <header id="Header" class="header">
-        <img class="logo" src="/src/img/logo1.png" alt="Logo Fresh Essence" />
+        <img class="logo" src="/src/img/logo3.png" alt="Logo Fresh Essence" />
         <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
         <nav class="nav" id="nav" >
             <button id="cerrar" class="cerrar-menu"><i class="bi bi-x"></i></button>
-            <ul class="nav-list" > 
+            <ul class="nav-list"> 
                 <li><a href="#" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">Inicio</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#" onclick="document.getElementById('servicios').scrollIntoView({ behavior: 'smooth' })">Servicios</a></li>
+                <li><a href="#" onclick="document.getElementById('nosotros').scrollIntoView({ behavior: 'smooth' })">Nosotros</a></li>
+                <li><a href="#" onclick="document.getElementById('contacto').scrollIntoView({ behavior: 'smooth' })">Contacto</a></li>
             </ul>
+
             <div>
                 <a href="#" class="boton-principal">Coger Cita</a>
             </div>
@@ -43,7 +44,7 @@
             </div>
         </section>
             <div class="pre">
-                <img class="logo" src="/src/img/logo1.png" alt="Logo Fresh Essence" />
+                <img class="logo" src="/src/img/logo3.png" alt="Logo Fresh Essence" />
                 <h2>Tratamientos Estéticos</h2>
                 <h3>CENTRO ESTÉTICO EN ALGECIRAS</h3>
                 <hr class="separador">
@@ -72,14 +73,14 @@
                 </a>
             </div>
         </section>
-    <section class="todo-servicios">    
+    <section class="todo-servicios" >    
             <section id="servicios" class="servicios-sec">
             <div class="titulo-servicios">
                 <h2>NUESTROS SERVICIOS</h2>
             </div>
             <div class="contenido-peluqueria">
                 <div class="columna-info">
-                    <h3>Peluquería</h3>
+                    <h3 id="peluqueria">Peluquería</h3>
                     <p>Ofrecemos cortes, coloración y tratamientos capilares personalizados para resaltar tu estilo. Nuestros estilistas usan productos de calidad para garantizar un cabello saludable y con el look que deseas.</p>
                     <p>Entendemos que tu cabello es una extensión de tu personalidad, por eso trabajamos de forma cercana contigo para lograr un resultado que te haga sentir segura, auténtica y renovada. Nos mantenemos actualizados con las últimas tendencias y técnicas profesionales para brindarte un servicio moderno, cuidado y a la altura de tus expectativas.</p>
                     <ul class="servicios-peluqueria">
@@ -250,6 +251,45 @@
       
     </section>
 
+    <footer class="footer">
+  	 <div class="container">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<a href="#servicios"> <h4>Servicios</h4></a>
+  	 			<ul>
+  	 				<li><a href="#peluqueria">Peluquería</a></li>
+  	 				<li><a href="#servicios">Manicura</a></li>
+  	 				<li><a href="#servicios">Tratamientos Faciales</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col" >
+  	 			<a href="#nosotros"> <h4>Nosotros</h4></a>
+  	 			<ul>
+  	 				<li><a href="#nosotros">Nuestros Valores</a></li>
+  	 				<li><a href="#nosotros">Nuestra Misión</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col" >
+  	 			<a href="#contacto"> <h4>Contacto</h4></a>
+  	 			<ul>
+  	 				<li><a href="#contacto">Ubicación</a></li>
+  	 				<li><a href="#contacto">Horario</a></li>
+  	 				<li><a href="#contacto">Teléfono</a></li>
+  	 				<li><a href="#contacto">Formulario</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>Síguenos</h4>
+  	 			<div class="social-links">
+  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="#"><i class="fab fa-twitter"></i></a>
+  	 				<a href="#"><i class="fab fa-instagram"></i></a>
+  	 				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+  </footer>
 
     
     
