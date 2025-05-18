@@ -216,30 +216,30 @@
             <h2>Ponte en contacto con nosotros</h2>
             <h3>Completa este formulario para tus consultas.</h3>
         
-            <form action="submeter-formulario.php" method="post">
+            <form action="form.php" method="post">
                 <p>
-                <label for="nombre" class="colocar_nombre">Nombre <span class="obligatorio">*</span></label>
-                <input type="text" name="introducir_nombre" id="nombre" required placeholder="Escribe tu nombre">
+                <label for="nombre">Nombre <span class="obligatorio">*</span></label>
+                <input type="text" name="nombre" id="nombre" required placeholder="Escribe tu nombre">
                 </p>
                 <p>
-                    <label for="apellidos" class="colocar_apellidos">Apellidos</label>
-                    <input type="text" name="introducir_apellidos" id="apellidos" placeholder="Escribe tu apellidos">
+                    <label for="apellidos" >Apellidos</label>
+                    <input type="text" name="apellidos" id="apellidos" placeholder="Escribe tu apellidos">
                 </p>
                 <p>
-                <label for="email" class="colocar_email">Email <span class="obligatorio">*</span></label>
-                <input type="email" name="introducir_email" id="email" required placeholder="Escribe tu Email">
+                <label for="email" >Email <span class="obligatorio">*</span></label>
+                <input type="email" name="email" id="email" required placeholder="Escribe tu Email">
                 </p>
                 <p>
-                <label for="telefono" class="colocar_telefono">Teléfono</label>
-                <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" name="telefono" id="telefono" placeholder="Escribe tu teléfono">
                 </p>
                 <p>
-                <label for="mensaje" class="colocar_mensaje">Mensaje <span class="obligatorio">*</span></label>
-                <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required placeholder="Deja aquí tu comentario..."></textarea>
+                <label for="mensaje">Mensaje <span class="obligatorio">*</span></label>
+                <textarea name="mensaje" class="texto_mensaje" id="mensaje" required placeholder="Deja aquí tu comentario..."></textarea>
                 </p>
         
                 <p>
-                <button type="submit" name="enviar_formulario" id="enviar">Enviar</button>
+                <button type="submit" name="enviar" id="enviar">Enviar</button>
                 </p>
         
                 <p class="aviso">
