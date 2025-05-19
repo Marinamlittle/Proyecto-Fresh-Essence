@@ -76,14 +76,29 @@ ul{
 
 /*responsive*/
 @media(max-width: 767px){
-  .footer-col{
-    width: 50%;
-    margin-bottom: 30px;
-}
-}
+	.footer{
+		background-color: v.$marino;
+		padding: 70px 0;
+		margin-top: 0px;
+	}
+  	.footer-col{
+		width: 50%;
+		margin-bottom: 30px;
+	}
+	.footer-col h4{
+		font-size: 14px;
+	}
+	.footer-col ul li a{
+		font-size: 12px;
+	}
 @media(max-width: 574px){
-  .footer-col{
-    width: 100%;
+
+	.footer{
+		background-color: v.$marino;
+		padding: 70px 0;
+		margin-top: 0px;
+	}
+	
 }
 }
 

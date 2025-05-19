@@ -146,8 +146,8 @@ a[href^="#"] {
     }
 
     &:nth-child(2) img {
-      height: 350px;
-      max-height: 350px;
+      max-height: 300px;
+      width: 100%;
     }
 
     h3 {

@@ -124,11 +124,11 @@ header {
   }
   .abrir-menu {
     color: #1a2b3c;
-    margin-left: 80px;
+    margin-left: 150px;
   }
   .cerrar-menu {
     color: #1a2b3c;
-    margin-left: 70px;
+    margin-right: -50px;
   }
   .header.shrink .logo {
     max-width: 10rem;
@@ -190,7 +190,7 @@ header {
     color: #333333;
   }
   .nav-list li a:hover {
-    color: #ffffff;
+    color: #beb7a4;
   }
   .boton-principal {
     background-color: #1a2b3c;
@@ -843,8 +843,8 @@ a[href^="#"] {
     height: 500px;
   }
   .caja-individual:nth-child(2) img {
-    height: 350px;
-    max-height: 350px;
+    max-height: 300px;
+    width: 100%;
   }
   .caja-individual h3 {
     font-size: 20px;
@@ -1089,7 +1089,7 @@ a[href^="#"] {
     justify-content: center;
     align-items: center;
     min-width: 280px;
-    padding: 20px 0;
+    padding: 20px 20px;
   }
   .columna-foto img {
     max-width: 120%;
@@ -1185,6 +1185,12 @@ a[href^="#"] {
   .caja-individual-nosotros-texto h3, .caja-individual-nosotros-texto h4, .caja-individual-nosotros-texto p {
     padding-left: 25px;
   }
+  .caja-individual-nosotros-texto h3 {
+    margin-top: 40px;
+  }
+  .caja-individual-nosotros-texto p:last-of-type {
+    margin-bottom: 10px;
+  }
 }
 
 .caja-imagen {
@@ -1250,6 +1256,7 @@ a[href^="#"] {
   .caja-mision h4 {
     font-size: 20px;
     padding-left: 12px;
+    margin-top: 20px;
   }
   .caja-mision p {
     font-size: 16px;
@@ -1284,7 +1291,7 @@ a[href^="#"] {
     align-items: left;
   }
   .caja-mision-imagen img {
-    width: 90%;
+    width: 100%;
     height: auto;
     padding: 20px;
   }
@@ -1539,7 +1546,8 @@ button p {
   .contact_form {
     width: 80%;
     max-width: 460px;
-    margin: 500px auto 40px auto;
+    margin-top: 500px;
+    margin-bottom: 0px;
     padding: 20px 15px;
   }
   .contact_form h1 {
@@ -1640,14 +1648,27 @@ ul {
 
 /*responsive*/
 @media (max-width: 767px) {
+  .footer {
+    background-color: #1a2b3c;
+    padding: 70px 0;
+    margin-top: 0px;
+  }
   .footer-col {
     width: 50%;
     margin-bottom: 30px;
   }
+  .footer-col h4 {
+    font-size: 14px;
+  }
+  .footer-col ul li a {
+    font-size: 12px;
+  }
 }
-@media (max-width: 574px) {
-  .footer-col {
-    width: 100%;
+@media (max-width: 767px) and (max-width: 574px) {
+  .footer {
+    background-color: #1a2b3c;
+    padding: 70px 0;
+    margin-top: 0px;
   }
 }
 

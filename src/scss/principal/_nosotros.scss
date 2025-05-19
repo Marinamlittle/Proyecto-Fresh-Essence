@@ -76,6 +76,13 @@
 
     h3, h4, p {
       padding-left: 25px;
+
+    }
+    h3{
+      margin-top: 40px;
+    }
+    p:last-of-type {
+      margin-bottom: 10px;
     }
   }
 }
@@ -147,6 +154,7 @@
     h4 {
       font-size: 20px;
       padding-left: 12px;
+      margin-top: 20px;
     }
 
     p {
@@ -182,10 +190,10 @@
     max-width: 100%;
     padding: 0;
     justify-content: left;
-  align-items: left;
+    align-items: left;
 
     img {
-      width: 90%;
+      width: 100%;
       height: auto;
       padding: 20px;
     }

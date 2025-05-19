@@ -103,11 +103,11 @@ header{
     }
 .abrir-menu{
     color: v.$marino;
-    margin-left: 80px;
+    margin-left: 150px;
  }
 .cerrar-menu{
     color: v.$marino;
-    margin-left: 70px;
+    margin-right: -50px;
  }
  .header.shrink .logo {
     max-width: 10rem;
@@ -173,7 +173,7 @@ header{
     color: v.$gris;
 }
 .nav-list li a:hover{
-    color: v.$blanco;
+    color: v.$beige;
 }
 .boton-principal{
     background-color: v.$marino;
