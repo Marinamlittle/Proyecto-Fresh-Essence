@@ -45,7 +45,8 @@ class Router
             echo "Página No Encontrada o Ruta no válida";
         }
     }
-
+    
+//render nos permite tomar una vista y pasarle los datos
     public function render($view, $datos = [])
     {
 

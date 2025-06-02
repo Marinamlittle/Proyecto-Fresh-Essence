@@ -75,10 +75,12 @@ class ActiveRecord {
         $atributos = $this->atributos();
         $sanitizado = [];
         foreach($atributos as $key => $value ) {
-            $sanitizado[$key] = self::$db->escape_string($value);
+            $valorSeguro = is_null($value) ? '' : (string) $value;
+            $sanitizado[$key] = self::$db->escape_string($valorSeguro);
         }
         return $sanitizado;
     }
+    
 
     // Sincroniza BD con Objetos en memoria
     public function sincronizar($args=[]) { 
@@ -116,6 +118,20 @@ class ActiveRecord {
         return array_shift( $resultado ) ;
     }
 
+    public static function where($columna, $valor) {
+        $query = "SELECT * FROM " . static::$tabla  ." WHERE {$columna} = '{$valor}'";
+
+        $resultado = self::consultarSQL($query);
+        return array_shift( $resultado ) ;
+    }
+
+
+    //Consulta plana de sql (utilizar cuando los metodos del modelo no son suficientes)
+    public static function SQL($query) {
+        $resultado = self::consultarSQL($query);
+        return $resultado;
+    }
+
     // Obtener Registros con cierta cantidad
     public static function get($limite) {
         $query = "SELECT * FROM " . static::$tabla . " LIMIT {$limite}";
@@ -134,7 +150,7 @@ class ActiveRecord {
         $query .= " ) VALUES (' "; 
         $query .= join("', '", array_values($atributos));
         $query .= " ') ";
-
+        
         // Resultado de la consulta
         $resultado = self::$db->query($query);
         return [

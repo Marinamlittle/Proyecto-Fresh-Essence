@@ -1,12 +1,15 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 
+//olvidar contraseña y crear cuenta
 .acciones{
     margin-top: v.$separacion;
     @include m.tablet{
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
+    
     a {
         color: v.$blanco;
         display: block;
