@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fresh Essence</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="dist/css/landing.css">
+    <link rel="stylesheet" href="/dist/css/landing.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,7 +14,7 @@
 </head>
 <body >
     <header id="Header" class="header">
-        <img class="logo" src="/src/img/logo3.png" alt="Logo Fresh Essence" />
+        <img class="logo" src="/build/img/logo3.avif" alt="Logo Fresh Essence" />
         <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
         <nav class="nav" id="nav" >
             <button id="cerrar" class="cerrar-menu"><i class="bi bi-x"></i></button>
@@ -26,7 +26,7 @@
             </ul>
 
             <div>
-                <a href="/" class="boton-principal">Coger Cita</a>
+                <a href="/login" class="boton-principal">Coger Cita</a>
             </div>
         </nav>
     </header>
@@ -37,14 +37,14 @@
                     <p>Peluquería · Tratamiento Faciales · Manicura · Cuidado Corporal</p>
                     <p>En nuestro centro de estética combinamos profesionalismo, experiencia y un trato personalizado para que cada visita sea una experiencia única.</p>
                     <div class="boton-encabezado">
-                        <button  id="btn-nosotros">CONTACTA CON NOSOTROS</button>
-                        <button  id="btn-servicios">CONOCE NUESTROS SERVICIOS</button>
+                        <button id="btn-nosotros" onclick="document.getElementById('contacto').scrollIntoView({ behavior: 'smooth' })"> CONTACTA CON NOSOTROS</button>
+                        <button id="btn-servicios" onclick="document.getElementById('servicios').scrollIntoView({ behavior: 'smooth' })">CONOCE NUESTROS SERVICIOS</button>
                     </div>
                 </div>
             </div>
         </section>
             <div class="pre">
-                <img class="logo" src="/src/img/logo3.png" alt="Logo Fresh Essence" />
+                <img class="logo" src="/build/img/logo3.avif" alt="Logo Fresh Essence" />
                 <h2>Tratamientos Estéticos</h2>
                 <h3>CENTRO ESTÉTICO EN ALGECIRAS</h3>
                 <hr class="separador">
@@ -53,21 +53,21 @@
         <section class="caja-imagenes">
             <div class="caja-individual">
                 <a href="#servicios">
-                    <img src="/src/img/6.jpg" alt="Foto" />
+                    <img src="/build/img/6.jpg" alt="Foto" />
                     <h3>Cuidados Faciales</h3>
-                    <p>Ayudamos a cuidar la piel en profundidad, quitando las bacterias acumuladas en la dermis por la contaminación ambientas o maquillaje.</p>
+                    <p>Ayudamos a cuidar la piel en profundidad, quitando las bacterias acumuladas en la dermis por la contaminación ambiental o maquillaje.</p>
                 </a>
             </div>
             <div class="caja-individual">
                 <a href="#servicios">
-                    <img src="/src/img/3.jpg" alt="Foto" />
+                    <img src="/build/img/3.jpg" alt="Foto" />
                     <h3>Manicura</h3>
                     <p>Cuidamos tus manos al detalle con técnicas profesionales y esmaltes de larga duración. Realza la belleza natural de tus uñas con un acabado impecable.</p>
                 </a>
             </div>
             <div class="caja-individual">
                 <a href="#servicios">
-                    <img src="/src/img/7.jpg" alt="Foto" />
+                    <img src="/build/img/7.jpg" alt="Foto" />
                     <h3>Peluquería</h3>
                     <p>Realzamos tu estilo con cortes, peinados y coloración adaptados a ti. Usamos productos de calidad para cuidar tu cabello mientras logramos el look que deseas.</p>
                 </a>
@@ -91,7 +91,7 @@
                     </ul>
                 </div>
                 <div class="columna-foto">
-                    <img src="/src/img/8.jpg" alt="Foto" />
+                    <img src="/build/img/8.jpg" alt="Foto" />
                 </div>
             </div>
         </section>
@@ -99,7 +99,7 @@
         <section id="manicura" class="servicios-sec">
             <div class="contenido-manicura">
                 <div class="columna-foto">
-                    <img src="/src/img/9.jpg" alt="Foto" />
+                    <img src="/build/img/9.jpg" alt="Foto" />
                 </div>
                 <div class="columna-info">
                     <h3>Manicura</h3>
@@ -130,7 +130,7 @@
                     </ul>
                 </div>
                 <div class="columna-foto">
-                    <img src="/src/img/1.jpg" alt="Foto" />
+                    <img src="/build/img/1.jpg" alt="Foto" />
                 </div>
             </div>
         </section>
@@ -143,7 +143,7 @@
         </div>
         <div class="caja-nosotros">
             <div class="caja-individual-nosotros-foto">
-                <img src="/src/img/12.jpg" alt="Foto" />
+                <img src="/build/img/12.jpg" alt="Foto" />
             </div>
             <div class="caja-individual-nosotros-texto">
                 <h3>NUESTRA HISTORIA</h3>
@@ -161,7 +161,7 @@
                 <p>Su pasión por el bienestar nació de su propia experiencia personal, enfrentando etapas de inseguridad y autoexigencia. Fue en ese camino de autoconocimiento donde descubrió el poder transformador de cuidar tanto el cuerpo como la mente.</p>
             </div>
             <div class="caja-individual-nosotros-foto">
-                <img src="/src/img/13.jpg" alt="Foto" />
+                <img src="/build/img/13.jpg" alt="Foto" />
             </div>
         </div>
         <div class="caja-imagen"></div>
@@ -176,7 +176,7 @@
                 <p>En Fresh Essence, creemos que la verdadera belleza comienza con una base de confianza y empatía. Nos esforzamos por crear un ambiente donde cada cliente se sienta escuchado, respetado y comprendido, porque sabemos que una experiencia de belleza exitosa va más allá de los tratamientos estéticos. Nuestros valores fundamentales —calidez, integridad, profesionalismo y pasión— guían cada una de nuestras acciones. Valoramos la autenticidad, fomentamos la inclusión y celebramos la diversidad, sabiendo que cada persona es única y merece una atención especial.</p>
             </div>
             <div class="caja-mision-imagen">
-                <img src="/src/img/15.jpg" alt="Foto" />
+                <img src="/build/img/15.jpg" alt="Foto" />
             </div>
         </div>
 
@@ -186,7 +186,7 @@
 
     <section class="contacto" id="contacto" href="#contacto" >
     <div class="contacto-img">
-        <img src="/src/img/contacto.jpg" alt="Foto" />
+        <img src="/build/img/contacto.jpg" alt="Foto" />
         <h2 class="titulo-contacto">CONTACTO</h2>
         <div class="caja-blanca">
             <div class="columna">
@@ -198,9 +198,7 @@
                 <i class="material-icons">schedule</i>
                 <h3>Horario</h3>
                 <h4>Lunes - Viernes</h4>
-                <h4>9:00 a 14:00 - 16:00 a 20:00</h4>
-                <h4>Sabados</h4>
-                <h4>9:00 a 13:00</h4>
+                <h4>10:00 a 20:00</h4>
             </div>
             <div class="columna">
                 <i class="material-icons">phone</i>
@@ -216,34 +214,34 @@
             <h2>Ponte en contacto con nosotros</h2>
             <h3>Completa este formulario para tus consultas.</h3>
         
-            <form action="form.php" method="post">
+            <form action="contacto-email.php" method="post">
                 <p>
-                <label for="nombre">Nombre <span class="obligatorio">*</span></label>
-                <input type="text" name="nombre" id="nombre" required placeholder="Escribe tu nombre">
+                    <label for="nombre">Nombre <span class="obligatorio">*</span></label>
+                    <input type="text" name="nombre" id="nombre" required placeholder="Escribe tu nombre">
                 </p>
                 <p>
                     <label for="apellidos" >Apellidos</label>
                     <input type="text" name="apellidos" id="apellidos" placeholder="Escribe tu apellidos">
                 </p>
                 <p>
-                <label for="email" >Email <span class="obligatorio">*</span></label>
-                <input type="email" name="email" id="email" required placeholder="Escribe tu Email">
+                    <label for="email" >Email <span class="obligatorio">*</span></label>
+                    <input type="email" name="email" id="email" required placeholder="Escribe tu Email">
                 </p>
                 <p>
-                <label for="telefono">Teléfono</label>
-                <input type="tel" name="telefono" id="telefono" placeholder="Escribe tu teléfono">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" name="telefono" id="telefono" placeholder="Escribe tu teléfono">
                 </p>
                 <p>
-                <label for="mensaje">Mensaje <span class="obligatorio">*</span></label>
-                <textarea name="mensaje" class="texto_mensaje" id="mensaje" required placeholder="Deja aquí tu comentario..."></textarea>
+                    <label for="mensaje">Mensaje <span class="obligatorio">*</span></label>
+                    <textarea name="mensaje" class="texto_mensaje" id="mensaje" required placeholder="Deja aquí tu comentario..."></textarea>
                 </p>
         
                 <p>
-                <button type="submit" name="enviar" id="enviar">Enviar</button>
+                    <button type="submit" name="enviar" id="enviar">Enviar</button>
                 </p>
         
                 <p class="aviso">
-                <span class="obligatorio">*</span> Los campos son obligatorios.
+                    <span class="obligatorio">*</span> Los campos son obligatorios.
                 </p>
             </form>
             </div>
@@ -289,6 +287,6 @@
   	 	</div>
   	 </div>
   </footer>
-    <script src="src/js/scripts.js"></script>
+    <script src="/build/js/scripts.js"></script>
 </body>
 </html>

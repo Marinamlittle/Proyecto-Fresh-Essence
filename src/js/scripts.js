@@ -1,18 +1,17 @@
 // Abrir y cerrar menú en móvil
-document.addEventListener("DOMContentLoaded", () => {
-    const nav = document.querySelector("#nav");
-    const abrir = document.querySelector("#abrir");
-    const cerrar = document.querySelector("#cerrar");
+  document.addEventListener("DOMContentLoaded", () => {
+      const nav = document.querySelector("#nav");
+      const abrir = document.querySelector("#abrir");
+      const cerrar = document.querySelector("#cerrar");
+    
+      abrir.addEventListener("click", () => {
+        nav.classList.add("visible");
+      });
+    
+      cerrar.addEventListener("click", () => {
+        nav.classList.remove("visible");
+      });
   
-    abrir.addEventListener("click", () => {
-      nav.classList.add("visible");
-    });
-  
-    cerrar.addEventListener("click", () => {
-      nav.classList.remove("visible");
-    });
-  
-
 // Scroll de la barra de navegación
   const header = document.getElementById("Header");
   window.addEventListener("scroll", () => {

@@ -3,7 +3,7 @@
         'name' => 'marina/freshessence',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '5566f7dcd6d395594a8690f3675c754d25526bd9',
+        'reference' => '1ab2da143418b534e67ca131a3573a44b42cea1b',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'marina/freshessence' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '5566f7dcd6d395594a8690f3675c754d25526bd9',
+            'reference' => '1ab2da143418b534e67ca131a3573a44b42cea1b',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
