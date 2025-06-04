@@ -724,7 +724,7 @@ template {
 }
 
 .caja-individual img {
-  width: 100px;
+  max-width: 100%;
   height: auto;
   margin-bottom: 15px;
 }
@@ -1580,7 +1580,7 @@ ul {
 .footer {
   background-color: #1a2b3c;
   padding: 70px 0;
-  margin-top: 250px;
+  margin-top: 10px;
 }
 
 .footer-col {
@@ -1669,6 +1669,88 @@ ul {
     background-color: #1a2b3c;
     padding: 70px 0;
     margin-top: 0px;
+  }
+}
+
+@use 'variables' as v;
+
+
+.seccion {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.izquierda, .derecha {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.izquierda {
+  flex-direction: column;
+  text-align: center;
+}
+.izquierda a {
+  background-color: #beb7a4;
+  color: #ffffff;
+  padding: 8px 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+  white-space: nowrap;
+  display: inline-block;
+  padding: 15px 30px;
+}
+
+
+.izquierda h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.izquierda p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.izquierda button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+.derecha img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin: 20px;
+}
+@media (max-width: 900px) {
+  .seccion {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 400px;
+    margin-bottom: 100px;
+  }
+
+  .izquierda, .derecha {
+    width: 100%;
+  }
+
+  .derecha img {
+    max-width: 100%;
   }
 }
 

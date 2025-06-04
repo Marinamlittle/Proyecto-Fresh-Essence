@@ -6,6 +6,7 @@ use Controllers\ContactoController;
 use Controllers\AdminController;
 use Controllers\APIController;
 use Controllers\CitaController;
+use Controllers\ContactoControler;
 use Controllers\LoginController;
 use Controllers\ServicioController;
 use Controllers\PaginasController;
@@ -53,6 +54,8 @@ $router->post('/servicios/eliminar', [ServicioController::class, 'eliminar']);
 
 //Pagina Landing
 $router->get('/', [PaginasController::class, 'index']);
+$router->get('/contacto', [ContactoControler::class,  'contacto']);
+$router->post('/contacto', [ContactoControler::class,  'contacto']);
 
 // Comprueba y valida las rutas, que existan y les asigna las funciones del Controlador
 $router->comprobarRutas();

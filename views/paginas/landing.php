@@ -22,7 +22,7 @@
                 <li><a href="#" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">Inicio</a></li>
                 <li><a href="#" onclick="document.getElementById('servicios').scrollIntoView({ behavior: 'smooth' })">Servicios</a></li>
                 <li><a href="#" onclick="document.getElementById('nosotros').scrollIntoView({ behavior: 'smooth' })">Nosotros</a></li>
-                <li><a href="#" onclick="document.getElementById('contacto').scrollIntoView({ behavior: 'smooth' })">Contacto</a></li>
+                <li><a href="/contacto">Contacto</a></li>
             </ul>
 
             <div>
@@ -185,69 +185,42 @@
     </section>
 
     <section class="contacto" id="contacto" href="#contacto" >
-    <div class="contacto-img">
-        <img src="/build/img/contacto.jpg" alt="Foto" />
-        <h2 class="titulo-contacto">CONTACTO</h2>
-        <div class="caja-blanca">
-            <div class="columna">
-                <i class="material-icons">location_on</i>
-                <h3>Ubicación</h3>
-                <h4>Av. España. Nº 10</h4>
+        <div class="contacto-img">
+            <img src="/build/img/contacto.jpg" alt="Foto" />
+            <h2 class="titulo-contacto">CONTACTO</h2>
+            <div class="caja-blanca">
+                <div class="columna">
+                    <i class="material-icons">location_on</i>
+                    <h3>Ubicación</h3>
+                    <h4>Av. España. Nº 10</h4>
+                </div>
+                <div class="columna">
+                    <i class="material-icons">schedule</i>
+                    <h3>Horario</h3>
+                    <h4>Lunes - Viernes</h4>
+                    <h4>10:00 a 20:00</h4>
+                </div>
+                <div class="columna">
+                    <i class="material-icons">phone</i>
+                    <h3>Teléfono</h3>
+                    <h4>601236548</h4>
+                </div>
             </div>
-            <div class="columna">
-                <i class="material-icons">schedule</i>
-                <h3>Horario</h3>
-                <h4>Lunes - Viernes</h4>
-                <h4>10:00 a 20:00</h4>
-            </div>
-            <div class="columna">
-                <i class="material-icons">phone</i>
-                <h3>Teléfono</h3>
-                <h4>601236548</h4>
-            </div>
+        </div>
+    </section>
+
+    <div class="seccion">
+        <div class="izquierda">
+            <h1>¿Tienes alguna pregunta?</h1>
+                <p>No dudes en contactar con nosotros.</p>
+                <p>Estamos aquí para ayudarte. Si tienes preguntas sobre nuestros servicios, necesitas asistencia personalizada o simplemente quieres saber más, no dudes en escribirnos. Nuestro equipo responderá lo antes posible.</p>
+
+             <a href="/contacto">Tengo una duda</a>
+        </div>
+        <div class="derecha">
+        <img src="build/img/cont.avif" alt="Imagen decorativa">
         </div>
     </div>
-
-    <div class="contact_form">
-        <div class="formulario">
-            <h1>Contáctanos</h1>
-            <h2>Ponte en contacto con nosotros</h2>
-            <h3>Completa este formulario para tus consultas.</h3>
-        
-            <form action="contacto-email.php" method="post">
-                <p>
-                    <label for="nombre">Nombre <span class="obligatorio">*</span></label>
-                    <input type="text" name="nombre" id="nombre" required placeholder="Escribe tu nombre">
-                </p>
-                <p>
-                    <label for="apellidos" >Apellidos</label>
-                    <input type="text" name="apellidos" id="apellidos" placeholder="Escribe tu apellidos">
-                </p>
-                <p>
-                    <label for="email" >Email <span class="obligatorio">*</span></label>
-                    <input type="email" name="email" id="email" required placeholder="Escribe tu Email">
-                </p>
-                <p>
-                    <label for="telefono">Teléfono</label>
-                    <input type="tel" name="telefono" id="telefono" placeholder="Escribe tu teléfono">
-                </p>
-                <p>
-                    <label for="mensaje">Mensaje <span class="obligatorio">*</span></label>
-                    <textarea name="mensaje" class="texto_mensaje" id="mensaje" required placeholder="Deja aquí tu comentario..."></textarea>
-                </p>
-        
-                <p>
-                    <button type="submit" name="enviar" id="enviar">Enviar</button>
-                </p>
-        
-                <p class="aviso">
-                    <span class="obligatorio">*</span> Los campos son obligatorios.
-                </p>
-            </form>
-            </div>
-        </div>
-      
-    </section>
 
     <footer class="footer">
   	 <div class="container">
