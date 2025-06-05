@@ -41,11 +41,12 @@ Todo esto se maneja con peticiones asincrónicas, mejorando la experiencia de us
 #Instalación y ejecución local
 
 1. Clona el proyecto.
-2. Copia la carpeta del proyecto dentro de `htdocs` si usas **XAMPP**.
-3. Asegúrate de que los servicios **Apache** y **MySQL** estén activos. (PUERTO MIO: 3307)
-4. Entra a **phpMyAdmin** y **crea la base de datos**. Importa la base de datos.
-5. Una vez este importada la base de datos, abre la terminal y escribe:
+2. Instala las dependencias: 'npm install'.
+3. Copia la carpeta del proyecto dentro de `htdocs` si usas **XAMPP**.
+4. Asegúrate de que los servicios **Apache** y **MySQL** estén activos. (PUERTO MIO: 3307)
+5. Entra a **phpMyAdmin** y **crea la base de datos**. Importa la base de datos.
+6. Una vez este importada la base de datos, abre la terminal y escribe:
    -cd public
    -ls
    -php -S localhost:3000
-6. Ya estaría abierto la aplicación.
+7. Ya estaría abierto la aplicación.
