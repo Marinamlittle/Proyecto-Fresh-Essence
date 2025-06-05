@@ -46,7 +46,7 @@ Todo esto se maneja con peticiones asincrónicas, mejorando la experiencia de us
 4. Asegúrate de que los servicios **Apache** y **MySQL** estén activos. (PUERTO MIO: 3307)
 5. Entra a **phpMyAdmin** y **crea la base de datos**. Importa la base de datos.
 6. Una vez este importada la base de datos, abre la terminal y escribe:
-   -cd public
-   -ls
-   -php -S localhost:3000
-7. Ya estaría abierto la aplicación.
+   1.cd public
+   2.ls
+   3.php -S localhost:3000
+7. Ya estaría abierta la aplicación.
