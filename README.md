@@ -1,6 +1,6 @@
 # Centro de Estética FRESH ESSENCE - Página Web
 
-Aqui podeis verlo: https://youtu.be/lRSlpRLkFw4
+Aquí podeis verlo: https://youtu.be/lRSlpRLkFw4
 
 Este es mi primer proyecto real: una página web desarrollada para un centro de estética que permite la gestión de servicios y citas a través de distintos tipos de usuarios. El objetivo fue crear una solución funcional, fluida y visualmente atractiva.
 
